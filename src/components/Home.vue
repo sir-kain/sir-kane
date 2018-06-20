@@ -3,6 +3,7 @@
     <Head></Head>
     <Hero></Hero>
     <Competences></Competences>
+    <Realisations></Realisations>
 
   </div>
 </template>
@@ -11,6 +12,7 @@
 import Head from './Head.vue'
 import Hero from './Hero.vue'
 import Competences from './Competences.vue'
+import Realisations from './Realisations.vue'
 export default {
   name: 'HelloWorld',
   data () {
@@ -21,26 +23,11 @@ export default {
   components: {
     Head,
     Hero,
-    Competences
+    Competences,
+    Realisations
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-// h1,
-// h2 {
-//   font-weight: normal;
-// }
-// ul {
-//   list-style-type: none;
-//   padding: 0;
-// }
-// li {
-//   display: inline-block;
-//   margin: 0 10px;
-//   a {
-//     color: #42b983;
-//   }
-// }
-</style>
+<style scoped lang="scss"></style>

@@ -21,11 +21,24 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   display: grid;
   margin: auto 20%;
   /* border: 1px solid rebeccapurple; */
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 840px) {
+ #app {
+   margin: 0;
+ }
+}
+
+@media screen and (min-width: 840px) and (max-width: 1040px) {
+ #app {
+   margin: auto 8%;
+ }
+}
+
 </style>

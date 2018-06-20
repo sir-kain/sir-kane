@@ -37,4 +37,13 @@ export default {
 img {
   height: 180px;
 }
+@media screen and (max-width: 840px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  img {
+    height: 100px;
+  }
+}
 </style>

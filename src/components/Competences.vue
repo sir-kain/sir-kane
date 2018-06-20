@@ -5,11 +5,11 @@
       <div class="box v-span">
         <div class="competence">
           <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
+        <span>Html 5 1</span>
         </div>
          <div class="competence">
           <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
+        <span>Html 5 1</span>
         </div>
       </div>
 
@@ -40,6 +40,10 @@
 
       <div class="box h-span">
          <div class="competence">
+          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
+        <span>Html 5</span>
+        </div>
+        <div class="competence">
           <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
         <span>Html 5</span>
         </div>
@@ -101,7 +105,8 @@ export default {
     border-radius: 3px;
     background-color: #fff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
-    padding: 18px 20px;
+    justify-self: center;
+    // padding: 18px 20px;
     display: grid;
   }
   .v-span {
@@ -111,6 +116,27 @@ export default {
   .h-span {
     grid-column: span 2;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .line {
+    grid-template-columns: 1fr 1fr;
+    .h-span {
+      grid-column: span 1;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 840px) {
+  .line {
+    grid-template-columns: repeat(3, 1fr);
+    .h-span {
+      grid-column: span 1;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row: span 2;
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 }
 </style>
