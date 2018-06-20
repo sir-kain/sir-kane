@@ -2,9 +2,9 @@
   <div class="head">
     <div class="menu">
       <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Réalisations</a></li>
         <li><a href="#">Compétences</a></li>
+        <li><a href="#">Réalisations</a></li>
+        <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
@@ -23,10 +23,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .head {
+  background-color: #fff;
   display: grid;
   justify-content: center;
   justify-items: center;
-  border: 1px solid red;
   padding: 1rem;
 }
 ul {

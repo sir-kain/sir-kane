@@ -24,22 +24,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .hero {
+  background-color: #fff;
   display: grid;
   justify-content: center;
   justify-items: center;
   grid-template-columns: 1fr 2fr;
-  border: 1px solid red;
   padding: 3rem 0;
 }
 .logo {
-  border: 1px solid red;
   place-self: center;
 }
 img {
   height: 180px;
-  border: 1px solid black;
-}
-.presentation {
-  border: 1px solid red;
 }
 </style>

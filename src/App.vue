@@ -12,6 +12,11 @@ export default {
 </script>
 
 <style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,5 +26,6 @@ export default {
   display: grid;
   margin: auto 20%;
   /* border: 1px solid rebeccapurple; */
+  box-sizing: border-box;
 }
 </style>
