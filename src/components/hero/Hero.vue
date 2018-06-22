@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <div class="logo">
-      <img src="../assets/kain.jpeg" alt="Logo sir_kane">
+      <img src="../../assets/kain.jpeg" alt="Logo sir_kane">
     </div>
     <div class="presentation">
       <h1>Développeur Web, Desktop & Mobile</h1>
@@ -44,6 +44,23 @@ img {
   }
   img {
     height: 100px;
+  }
+  .presentation {
+    text-align: center;
+    padding: 0 15%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  img {
+    height: 100px;
+  }
+  .presentation {
+    text-align: center;
+    padding: 0 5%;
   }
 }
 </style>

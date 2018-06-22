@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import Head from './Head.vue'
-import Hero from './Hero.vue'
-import Competences from './Competences.vue'
-import Realisations from './Realisations.vue'
+import Head from './head/Head.vue'
+import Hero from './hero/Hero.vue'
+import Competences from './competence/Competences.vue'
+import Realisations from './realisation/Realisations.vue'
 export default {
   name: 'HelloWorld',
   data () {
