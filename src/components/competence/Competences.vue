@@ -1,79 +1,140 @@
 <template>
   <div class="competences" id="competences">
     <!-- grid section  -->
-    <div class="line">
+    <ul>
+      <li><a href="#" @click.prevent="give('langages')">Langages & Frameworks</a></li>
+      <li><a href="#" @click.prevent="give('outils')">Outils</a></li>
+      <li><a href="#" @click.prevent="give('contributions')">Contributions</a></li>
+    </ul>
+    <div class="line" v-if="langages">
       <div class="box v-span">
         <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5 1</span>
+          <img src="../../assets/competences/html5.png" alt="">
+        <span>Html5</span>
         </div>
          <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5 1</span>
-        </div>
-      </div>
-
-      <div class="box h-span">
-         <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
-        </div>
-         <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
-        </div>
-      </div>
-
-      <div class="box">
-         <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
-        </div>
-      </div>
-
-      <div class="box">
-         <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
+          <img src="../../assets/competences/css.png" alt="">
+        <span> CSS </span>
         </div>
       </div>
 
       <div class="box h-span">
          <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
+          <img src="../../assets/competences/php.png" alt="">
+        <span>Php</span>
+        </div>
+         <div class="competence">
+          <img src="../../assets/competences/symfony.png" alt="">
+        <span>Symfony</span>
+        </div>
+      </div>
+
+      <div class="box">
+         <div class="competence">
+          <img src="../../assets/competences/wordpress.png" alt="">
+        <span>Wordpress</span>
+        </div>
+      </div>
+
+      <div class="box">
+         <div class="competence">
+          <img src="../../assets/competences/laravel.png" alt="">
+        <span>Laravel</span>
+        </div>
+      </div>
+
+      <div class="box h-span">
+         <div class="competence">
+          <img src="../../assets/competences/js.png" alt="">
+        <span>Javascript</span>
         </div>
         <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
+          <img src="../../assets/competences/vuejs.png" alt="">
+        <span>Vue.js</span>
         </div>
       </div>
 
       <div class="box">
          <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
+          <img src="../../assets/competences/angular.png" alt="">
+        <span>Angular</span>
         </div>
       </div>
 
       <div class="box">
          <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
+          <img src="../../assets/competences/java.png" alt="">
+        <span>Java</span>
         </div>
       </div>
 
       <div class="box">
          <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
+          <img src="../../assets/competences/python.png" alt="">
+        <span>Python</span>
         </div>
       </div>
 
       <div class="box">
          <div class="competence">
-          <img src="http://jonathan-boyer.fr/images/skills/html5.png" alt="">
-        <span>Html 5</span>
+          <img src="../../assets/competences/django.png" alt="">
+        <span>Django</span>
+        </div>
+      </div>
+    </div>
+    <div class="line" v-if="outils">
+      <div class="box h-span">
+         <div class="competence">
+          <img src="../../assets/competences/php.png" alt="">
+        <span>Php</span>
+        </div>
+         <div class="competence">
+          <img src="../../assets/competences/symfony.png" alt="">
+        <span>Symfony</span>
+        </div>
+      </div>
+
+      <div class="box h-span">
+         <div class="competence">
+          <img src="../../assets/competences/js.png" alt="">
+        <span>Javascript</span>
+        </div>
+        <div class="competence">
+          <img src="../../assets/competences/vuejs.png" alt="">
+        <span>Vue.js</span>
+        </div>
+      </div>
+
+      <div class="box">
+         <div class="competence">
+          <img src="../../assets/competences/java.png" alt="">
+        <span>Java</span>
+        </div>
+      </div>
+
+      <div class="box">
+         <div class="competence">
+          <img src="../../assets/competences/python.png" alt="">
+        <span>Python</span>
+        </div>
+      </div>
+
+      <div class="box">
+         <div class="competence">
+          <img src="../../assets/competences/django.png" alt="">
+        <span>Django</span>
+        </div>
+      </div>
+    </div>
+    <div class="line" v-if="contributions">
+      <div class="box v-span">
+        <div class="competence">
+          <img src="../../assets/competences/html5.png" alt="">
+        <span>Html5</span>
+        </div>
+         <div class="competence">
+          <img src="../../assets/competences/css.png" alt="">
+        <span> CSS </span>
         </div>
       </div>
     </div>
@@ -85,58 +146,39 @@ export default {
   // name: 'Head',
   props: {
     msg: String
+  },
+  data () {
+    return {
+      langages: true,
+      outils: false,
+      contributions: false
+    }
+  },
+  methods: {
+    give (item) {
+      if (item === 'langages') {
+        // return {
+        this.langages = true
+        this.outils = false
+        this.contributions = false
+        // }
+      } else if (item === 'outils') {
+        // return {
+        this.langages = false
+        this.outils = true
+        this.contributions = false
+        // }
+      } else {
+        // return {
+        this.langages = false
+        this.outils = false
+        this.contributions = true
+        // }
+      }
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-.competences {
-  // display: grid;
-  // border: 1px solid red;
-  margin: 1rem 0;
-  // padding: 1rem;
-}
-.line {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  .box {
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
-    justify-self: center;
-    // padding: 18px 20px;
-    display: grid;
-  }
-  .v-span {
-    grid-row: span 2;
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .h-span {
-    grid-column: span 2;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .line {
-    grid-template-columns: 1fr 1fr;
-    .h-span {
-      grid-column: span 1;
-      grid-template-columns: 1fr;
-    }
-  }
-}
-@media screen and (min-width: 640px) and (max-width: 840px) {
-  .line {
-    grid-template-columns: repeat(3, 1fr);
-    .h-span {
-      grid-column: span 1;
-      grid-template-columns: repeat(1, 1fr);
-      grid-row: span 2;
-      grid-template-rows: repeat(2, 1fr);
-    }
-  }
-}
-</style>
+<style scoped src="./competences.scss" lang="scss"></style>

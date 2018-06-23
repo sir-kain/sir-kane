@@ -13,7 +13,7 @@ export default {
     return {
       realisations: [
         {
-          image: 'http://via.placeholder.com/150x100',
+          image: 'http://via.placeholder.com/50x100',
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         },

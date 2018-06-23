@@ -4,7 +4,7 @@
       <img src="../../assets/kain.jpeg" alt="Logo sir_kane">
     </div>
     <div class="presentation">
-      <h1>Développeur Web, Desktop & Mobile</h1>
+      <h1>Web, Desktop & Mobile developer</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates praesentium aut doloribus fugit consectetur, doloremque ad earum quo in vel magnam quidem id tenetur repellat repudiandae. Illum, totam aliquid.
       </p>
