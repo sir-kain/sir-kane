@@ -1,11 +1,15 @@
 <template>
   <div class="competences" id="competences">
+    <!-- Libelle section -->
+    <div class="section__title">
+      <h2>Compétences</h2>
+      <ul>
+        <li><a href="#" @click.prevent="give('langages')">Langages & Frameworks</a></li>
+        <li><a href="#" @click.prevent="give('outils')">Outils</a></li>
+        <li><a href="#" @click.prevent="give('contributions')">Contributions</a></li>
+      </ul>
+    </div>
     <!-- grid section  -->
-    <ul>
-      <li><a href="#" @click.prevent="give('langages')">Langages & Frameworks</a></li>
-      <li><a href="#" @click.prevent="give('outils')">Outils</a></li>
-      <li><a href="#" @click.prevent="give('contributions')">Contributions</a></li>
-    </ul>
     <div class="line" v-if="langages">
       <div class="box v-span">
         <div class="competence">

@@ -6,8 +6,13 @@
     grid-auto-flow: row dense;
     counter-reset: project;
     .project {
+      background: #fff;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
       counter-increment: project;
       cursor: pointer;
+      h2, p {
+        padding: 0 0.5rem;
+      }
       .project__image {
         width: 100%;
         height: auto;

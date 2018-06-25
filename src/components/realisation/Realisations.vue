@@ -2,19 +2,19 @@
   <div class="realisations" id="realisations">
     <!-- grid section  -->
     <div class="projects">
-      <div class="project" v-for="realisation in realisations" :key="realisation.id">
+      <div class="project" @click.prevent="clickproject($event)" v-for="realisation in realisations" :key="realisation.id">
         <img :src="realisation.image" alt="" class="project__image">
         <h2 class="project__title"> {{ realisation.title }} </h2>
         <p class="project__libelle"> {{ realisation.libelle }} </p>
+        <div class="project__body">
+          <h2 class="project__body-title">Lorem impsut</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente nam modi recusandae corporis eligendi repellendus provident. Eius ducimus sapiente nisi, nesciunt aspernatur est natus veritatis quos odio numquam animi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit quas voluptatem odio sed dolorem deleniti nisi vero dicta quod at nam ratione, obcaecati aperiam nemo architecto harum iusto! Doloremque.
+          </p>
+          <a href="#">En savoir plus</a>
+        </div>
       </div>
-    </div>
-    <div class="project__body">
-      <h2 class="project__body-title">Lorem impsut</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente nam modi recusandae corporis eligendi repellendus provident. Eius ducimus sapiente nisi, nesciunt aspernatur est natus veritatis quos odio numquam animi.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit quas voluptatem odio sed dolorem deleniti nisi vero dicta quod at nam ratione, obcaecati aperiam nemo architecto harum iusto! Doloremque.
-      </p>
-      <a href="#">En savoir plus</a>
     </div>
   </div>
 </template>
@@ -32,8 +32,8 @@ export default {
         {
           id: 1,
           image: 'http://via.placeholder.com/90x60',
-          title: 'Lorem impsut',
-          libelle: 'Excepturi quis repellendus'
+          title: 'PGDE',
+          libelle: 'Plateforme de Gestion des Demandes d\'Emploi'
         },
         {
           id: 2,
@@ -85,15 +85,25 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    clickproject (event) {
+      let projectbodyActive = Array.prototype.slice.call(document.querySelectorAll('.project__body-current'))
+      projectbodyActive.map((item) => {
+        item.remove()
+      })
+      let project = event.target.closest('.project')
+      let projetbody = project.querySelector('.project__body').cloneNode(true)
+
+      projetbody.classList.add('project__body-current')
+      project.after(projetbody)
+      window.scrollTo({
+        behavior: 'smooth',
+        left: 0,
+        top: project.offsetTop
+      })
+    }
   }
-  // components: {
-  //   Realisation
-  // }
-  // directives: {
-  //   data () {
-  //     return this.realisations
-  //   }
-  // }
 }
 </script>
 

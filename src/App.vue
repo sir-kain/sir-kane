@@ -17,6 +17,21 @@ body {
   padding: 0;
   background-color: #eee;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
