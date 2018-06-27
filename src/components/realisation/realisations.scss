@@ -42,6 +42,9 @@
   .realisations {
     .projects {
       grid-template-columns: repeat(2, 1fr);
+      .project__body {
+        grid-column: span 2;
+      }
     }
   }
 }

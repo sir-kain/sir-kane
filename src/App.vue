@@ -15,7 +15,7 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: #eee;
+  background-color: rgb(238, 238, 238);
 }
 ul {
   list-style: none;
