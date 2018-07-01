@@ -1,14 +1,7 @@
 <template>
   <div class="competences" id="competences">
     <!-- Libelle section -->
-    <div class="section__title">
-      <h2>Compétences</h2>
-      <ul>
-        <li><a href="#" @click.prevent="give('langages')">Langages & Frameworks</a></li>
-        <li><a href="#" @click.prevent="give('outils')">Outils</a></li>
-        <li><a href="#" @click.prevent="give('contributions')">Contributions</a></li>
-      </ul>
-    </div>
+    <Separator title="Compétences" :link="true" @langages-clicked="clickedLangages"></Separator>
     <!-- grid section  -->
     <div class="line" v-if="langages">
       <div class="box v-span">
@@ -146,6 +139,8 @@
 </template>
 
 <script>
+
+import Separator from '../separator/Separator'
 export default {
   // name: 'Head',
   props: {
@@ -158,26 +153,23 @@ export default {
       contributions: false
     }
   },
+  components: {
+    Separator
+  },
   methods: {
-    give (item) {
-      if (item === 'langages') {
-        // return {
+    clickedLangages (value) {
+      if (value.langages === true) {
         this.langages = true
         this.outils = false
         this.contributions = false
-        // }
-      } else if (item === 'outils') {
-        // return {
+      } else if (value.outils === true) {
         this.langages = false
         this.outils = true
         this.contributions = false
-        // }
-      } else {
-        // return {
+      } else if (value.contributions === true) {
         this.langages = false
         this.outils = false
         this.contributions = true
-        // }
       }
     }
   }

@@ -1,0 +1,12 @@
+.separator {
+  background: #fff;
+  padding: 0.35rem;
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  ul {
+    justify-self: end;
+  }
+}
+
+@media screen and (max-width: 600px) {}
