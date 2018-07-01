@@ -97,6 +97,7 @@ export default {
 
       projetbody.classList.add('project__body-current')
       project.after(projetbody)
+      // projetbody.style.backgroundColor = '#fff';
       window.scrollTo({
         behavior: 'smooth',
         left: 0,

@@ -24,7 +24,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .hero {
-  background-color: rgba(255, 255, 255, 0.753);
+  background-color: #fff;
   display: grid;
   justify-content: center;
   justify-items: center;
