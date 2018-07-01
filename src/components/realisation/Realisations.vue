@@ -1,5 +1,6 @@
 <template>
   <div class="realisations" id="realisations">
+    <Separator title="Réalsations"></Separator>
     <!-- grid section  -->
     <div class="projects">
       <div class="project" @click.prevent="clickproject($event)" v-for="realisation in realisations" :key="realisation.id">
@@ -20,7 +21,8 @@
 </template>
 
 <script>
-// import Realisation from "./Realisation";
+
+import Separator from '../separator/Separator'
 export default {
   // name: 'Head',
   props: {
@@ -86,6 +88,9 @@ export default {
       ]
     }
   },
+  components: {
+    Separator
+  },
   methods: {
     clickproject (event) {
       let projectbodyActive = Array.prototype.slice.call(document.querySelectorAll('.project__body-current'))
@@ -97,6 +102,7 @@ export default {
 
       projetbody.classList.add('project__body-current')
       project.after(projetbody)
+      // projetbody.style.backgroundColor = '#fff';
       window.scrollTo({
         behavior: 'smooth',
         left: 0,

@@ -10,7 +10,8 @@
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
       counter-increment: project;
       cursor: pointer;
-      h2, p {
+      h2,
+      p {
         padding: 0 0.5rem;
       }
       .project__image {
@@ -23,6 +24,10 @@
       .project__title::after {
         content: counter(project);
       }
+    }
+    .project__body {
+      padding: 1rem;
+      background: #fff;
     }
   }
 }
