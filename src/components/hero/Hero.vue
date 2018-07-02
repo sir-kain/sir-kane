@@ -29,7 +29,7 @@ export default {
   justify-content: center;
   justify-items: center;
   grid-template-columns: 1fr 2fr;
-  padding: 3rem 0;
+  padding: 3rem 1.5rem;
 }
 .logo {
   place-self: center;
