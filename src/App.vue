@@ -39,7 +39,7 @@ h1, h2 {
   /* text-align: center; */
   color: #2c3e50;
   display: grid;
-  margin: auto 20%;
+  margin: auto 19%;
   /* border: 1px solid rebeccapurple; */
   box-sizing: border-box;
 }
