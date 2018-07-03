@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
-    <div class="logo">
-      <img src="../../assets/kain.jpeg" alt="Logo sir_kane">
+    <div class="img-hero">
+      <img src="../../assets/kain.jpeg" alt="image sir_kane">
     </div>
     <div class="presentation">
       <h1>Web, Desktop & Mobile developer</h1>
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 .hero {
   background-color: #fff;
   display: grid;
@@ -31,7 +31,12 @@ export default {
   grid-template-columns: 1fr 2fr;
   padding: 3rem 1.5rem;
 }
-.logo {
+.presentation {
+  h1 {
+    text-align: center;
+  }
+}
+.img-hero {
   place-self: center;
 }
 img {

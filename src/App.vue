@@ -40,6 +40,7 @@ h1, h2 {
   color: #2c3e50;
   display: grid;
   margin: auto 19%;
+  padding: 0 .35rem;
   /* border: 1px solid rebeccapurple; */
   box-sizing: border-box;
 }

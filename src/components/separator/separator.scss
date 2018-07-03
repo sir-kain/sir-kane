@@ -1,12 +1,25 @@
 .separator {
   background: #fff;
-  padding: 0.35rem;
+  padding: 0.35rem 2rem;
   margin: 0.5rem 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 3fr;
   ul {
+    text-align: center;
     justify-self: end;
   }
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 540px) {
+  .separator {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: .05rem;
+    h2 {
+      justify-self: center;
+    }
+    ul {
+      justify-self: center;
+    }
+  }
+}

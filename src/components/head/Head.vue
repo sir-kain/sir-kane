@@ -64,7 +64,7 @@ export default {
     .menu {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 1fr);
-      grid-row-gap: .5rem;
+      grid-row-gap: 1rem;
       .logo {
         justify-self: center;
       }
