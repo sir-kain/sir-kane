@@ -1,12 +1,27 @@
 .separator {
   background: #fff;
-  padding: 0.35rem 2rem;
+  padding: 0.35rem 1rem;
   margin: 0.5rem 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
   ul {
     text-align: center;
-    justify-self: end;
+    // justify-self: end;
+    place-self: center end;
+    font-size: .72rem;
+    li {
+      padding: 0.2rem .5rem;
+      border-radius: 5%;
+      background-color: #208af7;
+      opacity: 0.9;
+      a {
+        color: #fff;
+        font-weight: 900;
+      }
+      &:hover {
+        background: opacify($color: #025609, $amount: 0.1);
+      }
+    }
   }
 }
 

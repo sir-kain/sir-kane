@@ -80,37 +80,37 @@
     <div class="line" v-if="outils">
       <div class="box h-span">
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/php.png" alt="">
-        <span>Php</span>
+          <img height="90px" width="100px" src="../../assets/competences/tools/linux.png" alt="">
+        <span>Linux</span>
         </div>
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/symfony.png" alt="">
-        <span>Symfony</span>
+          <img height="90px" width="100px" src="../../assets/competences/tools/intellij.png" alt="">
+        <span>Intellij</span>
         </div>
       </div>
 
       <div class="box h-span">
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/js.png" alt="">
-        <span>Javascript</span>
+          <img height="90px" width="100px" src="../../assets/competences/tools/webpack.png" alt="">
+        <span>Webpack</span>
         </div>
         <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/vuejs.png" alt="">
-        <span>Vue.js</span>
+          <img height="90px" width="100px" src="../../assets/competences/tools/gulp.png" alt="">
+        <span>Gulp</span>
         </div>
       </div>
 
       <div class="box">
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/java.png" alt="">
-        <span>Java</span>
+          <img height="90px" width="100px" src="../../assets/competences/tools/git.png" alt="">
+        <span>Git</span>
         </div>
       </div>
 
       <div class="box">
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/python.png" alt="">
-        <span>Python</span>
+          <img height="90px" width="100px" src="../../assets/competences/tools/docker.png" alt="">
+        <span>Docker (virtualisation)</span>
         </div>
       </div>
 
@@ -121,15 +121,33 @@
         </div>
       </div>
     </div>
-    <div class="line" v-if="contributions">
-      <div class="box v-span">
-        <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/html5.png" alt="">
-        <span>Html5</span>
+    <div class="line-v2" v-if="contributions">
+      <div class="box-contribution">
+        <div class="contribution">
+          <img width="25px" src="../../assets/competences/symfony.png" alt="">
+          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
         </div>
-         <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/css.png" alt="">
-        <span> CSS </span>
+        <div class="contribution">
+          <img width="25px" src="../../assets/competences/symfony.png" alt="">
+          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+        </div>
+        <div class="contribution">
+          <img width="25px" src="../../assets/competences/vuejs.png" alt="">
+          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+        </div>
+      </div>
+      <div class="box-contribution">
+        <div class="contribution">
+          <img width="25px" src="../../assets/competences/symfony.png" alt="">
+          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+        </div>
+        <div class="contribution">
+          <img width="25px" src="../../assets/competences/symfony.png" alt="">
+          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+        </div>
+        <div class="contribution">
+          <img width="25px" src="../../assets/competences/vuejs.png" alt="">
+          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
         </div>
       </div>
     </div>

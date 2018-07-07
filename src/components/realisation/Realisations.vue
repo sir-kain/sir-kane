@@ -33,55 +33,55 @@ export default {
       realisations: [
         {
           id: 1,
-          image: 'http://via.placeholder.com/90x60',
+          image: 'http://via.placeholder.com/140x100',
           title: 'PGDE',
           libelle: 'Plateforme de Gestion des Demandes d\'Emploi'
         },
         {
           id: 2,
-          image: 'http://via.placeholder.com/90x60',
+          image: 'http://via.placeholder.com/140x100',
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         },
         {
           id: 3,
-          image: 'http://via.placeholder.com/150x100',
+          image: 'http://via.placeholder.com/140x100',
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         },
         {
           id: 4,
-          image: 'http://via.placeholder.com/150x100',
+          image: 'http://via.placeholder.com/140x100',
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         },
         {
           id: 5,
-          image: 'http://via.placeholder.com/150x100',
+          image: 'http://via.placeholder.com/140x100',
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         },
         {
           id: 6,
-          image: 'http://via.placeholder.com/150x100',
+          image: 'http://via.placeholder.com/140x100',
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         },
         {
           id: 7,
-          image: 'http://via.placeholder.com/150x100',
+          image: 'http://via.placeholder.com/140x100',
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         },
         {
           id: 8,
-          image: 'http://via.placeholder.com/150x100',
+          image: 'http://via.placeholder.com/140x100',
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         },
         {
           id: 9,
-          image: 'http://via.placeholder.com/150x100',
+          image: 'http://via.placeholder.com/140x100',
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         }
