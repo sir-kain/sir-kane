@@ -12,14 +12,15 @@
     li {
       padding: 0.2rem .5rem;
       border-radius: 5%;
-      background-color: #208af7;
+      background-color: #000;
       opacity: 0.9;
+      transition: all 0.1s ease-in-out;
       a {
         color: #fff;
         font-weight: 900;
       }
       &:hover {
-        background: opacify($color: #025609, $amount: 0.1);
+        opacity: 1;
       }
     }
   }

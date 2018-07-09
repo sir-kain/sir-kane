@@ -1,6 +1,6 @@
 <template>
   <div class="realisations" id="realisations">
-    <Separator title="Réalsations"></Separator>
+    <Separator title="Réalisations"></Separator>
     <!-- grid section  -->
     <div class="projects">
       <div class="project" @click.prevent="clickproject($event)" v-for="realisation in realisations" :key="realisation.id">
