@@ -31,6 +31,10 @@ a {
 h1, h2 {
   padding: 0;
   margin: 0;
+  font-size: 1.4em;
+}
+h2 {
+  font-size: 1.2em;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

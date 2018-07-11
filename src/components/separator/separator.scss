@@ -4,6 +4,13 @@
   margin: 0.5rem 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  .separator__title {
+    display: flex;
+    align-items: center;
+    h2 {
+      margin-left: 0.4rem;
+    }
+  }
   ul {
     text-align: center;
     // justify-self: end;
@@ -31,7 +38,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: .05rem;
-    h2 {
+    .separator__title {
       justify-self: center;
     }
     ul {

@@ -1,9 +1,9 @@
 <template>
   <div class="competences" id="competences">
     <!-- Libelle section -->
-    <Separator title="Compétences" :link="true" @langages-clicked="clickedLangages"></Separator>
+    <Separator title="Compétences" :link="true" @langages-clicked="clickedLangages" @section-clicked="clickedSection"></Separator>
     <!-- grid section  -->
-    <div class="line" v-if="langages">
+    <div class="line" v-if="langages && sectionStatus">
       <div class="box v-span">
         <div class="competence">
           <img height="90px" width="100px" src="../../assets/competences/html5.png" alt="">
@@ -77,7 +77,7 @@
         </div>
       </div>
     </div>
-    <div class="line" v-if="outils">
+    <div class="line" v-if="outils  && sectionStatus">
       <div class="box h-span">
          <div class="competence">
           <img height="90px" width="100px" src="../../assets/competences/tools/linux.png" alt="">
@@ -121,7 +121,7 @@
         </div>
       </div>
     </div>
-    <div class="line-v2" v-if="contributions">
+    <div class="line-v2" v-if="contributions  && sectionStatus">
       <div class="box-contribution">
         <div class="contribution">
           <img width="25px" src="../../assets/competences/symfony.png" alt="">
@@ -166,7 +166,8 @@ export default {
     return {
       langages: true,
       outils: false,
-      contributions: false
+      contributions: false,
+      sectionStatus: false
     }
   },
   components: {
@@ -187,6 +188,9 @@ export default {
         this.outils = false
         this.contributions = true
       }
+    },
+    clickedSection (value) {
+      this.sectionStatus = value
     }
   }
 }
