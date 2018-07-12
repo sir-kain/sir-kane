@@ -1,18 +1,18 @@
 <template>
     <div id="separator" class="separator">
-      <div class="separator__title">
-        <font-awesome-icon size="xs" :icon="sectionStatus ? 'chevron-down' : 'chevron-right'" @click="togglesection()" />
+      <div class="separator__title" @click="togglesection()">
+        <font-awesome-icon size="xs" :icon="sectionStatus ? 'chevron-down' : 'chevron-right'" />
         <h2>{{ title }}</h2>
       </div>
       <ul class="separator__menu-s" v-if="link">
         <li>
-          <a href="#" @click.prevent="showItem('langages')">
+          <a href="#" @click.prevent.stop="showItem('langages')">
           <font-awesome-icon icon="code" />
             Langages & Frameworks
           </a>
         </li>
-        <li><a href="#" @click.prevent="showItem('outils')"><font-awesome-icon icon="wrench" />Outils</a></li>
-        <li><a href="#" @click.prevent="showItem('contributions')"><font-awesome-icon icon="code-branch" />Contributions</a></li>
+        <li><a href="#" @click.prevent.stop="showItem('outils')"><font-awesome-icon icon="wrench" />Outils</a></li>
+        <li><a href="#" @click.prevent.stop="showItem('contributions')"><font-awesome-icon icon="code-branch" />Contributions</a></li>
       </ul>
     </div>
 </template>
@@ -53,6 +53,7 @@ export default {
           outils: false,
           contributions: false
         }
+        this.sectionStatus = true
         this.$emit('langages-clicked', this.selectedCompetenceType)
       } else if (item === 'outils') {
         this.selectedCompetenceType = {
@@ -60,6 +61,7 @@ export default {
           outils: true,
           contributions: false
         }
+        this.sectionStatus = true
         this.$emit('langages-clicked', this.selectedCompetenceType)
       } else {
         this.selectedCompetenceType = {
@@ -67,6 +69,7 @@ export default {
           outils: false,
           contributions: true
         }
+        this.sectionStatus = true
         this.$emit('langages-clicked', this.selectedCompetenceType)
       }
     },

@@ -179,14 +179,17 @@ export default {
         this.langages = true
         this.outils = false
         this.contributions = false
+        this.sectionStatus = true
       } else if (value.outils === true) {
         this.langages = false
         this.outils = true
         this.contributions = false
+        this.sectionStatus = true
       } else if (value.contributions === true) {
         this.langages = false
         this.outils = false
         this.contributions = true
+        this.sectionStatus = true
       }
     },
     clickedSection (value) {
