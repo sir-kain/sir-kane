@@ -5,9 +5,14 @@
         <h2>{{ title }}</h2>
       </div>
       <ul class="separator__menu-s" v-if="link">
-        <li><a href="#" @click.prevent="showItem('langages')">Langages & Frameworks</a></li>
-        <li><a href="#" @click.prevent="showItem('outils')">Outils</a></li>
-        <li><a href="#" @click.prevent="showItem('contributions')">Contributions</a></li>
+        <li>
+          <a href="#" @click.prevent="showItem('langages')">
+          <font-awesome-icon icon="code" />
+            Langages & Frameworks
+          </a>
+        </li>
+        <li><a href="#" @click.prevent="showItem('outils')"><font-awesome-icon icon="wrench" />Outils</a></li>
+        <li><a href="#" @click.prevent="showItem('contributions')"><font-awesome-icon icon="code-branch" />Contributions</a></li>
       </ul>
     </div>
 </template>
@@ -15,11 +20,14 @@
 <script>
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronRight, faCode, faWrench, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faChevronDown)
 library.add(faChevronRight)
+library.add(faCode)
+library.add(faWrench)
+library.add(faCodeBranch)
 export default {
   // name: 'Head',
   props: {
