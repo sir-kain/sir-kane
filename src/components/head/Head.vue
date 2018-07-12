@@ -3,9 +3,9 @@
     <div class="menu">
       <a href="#" class="logo"> <span>SK</span> sir_kane </a>
       <ul>
-        <li><a href="#">Compétences</a></li>
-        <li><a href="#">Réalisations</a></li>
-        <li><a href="#">Blog</a></li>
+        <li class="mr"><a href="#competences">Compétences</a></li>
+        <li class="mr"><a href="#realisations">Réalisations</a></li>
+        <li class="mr"><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
@@ -35,9 +35,10 @@ export default {
     align-content: space-between;
     .logo {
       justify-self: start;
+      color: #2c3e50;
       span {
-        padding: .5rem;
-        border: 2px solid black;
+        padding: .35rem;
+        border: 2px solid #208AF7;
       }
     }
     ul {
@@ -48,11 +49,27 @@ export default {
       li {
         display: inline-block;
         padding: auto .5rem;
-        &:before {
-          content: "/";
+        padding-bottom: 0.5rem;
+        transition: all .2s ease-in-out;
+        box-sizing: border-box;
+        border-bottom: 2px solid #fff;
+        // &:before {
+        //   content: "/";
+        // }
+        &.mr {
+          margin-right: .9rem;
+        }
+        &:hover {
+          border-bottom: 2px solid #000;
+          a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+          }
         }
         a {
           text-decoration: none;
+          color: #2c3e50;
         }
       }
     }

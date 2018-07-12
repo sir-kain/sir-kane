@@ -1,15 +1,33 @@
 <template>
     <div id="separator" class="separator">
-      <h2>{{ title }}</h2>
-      <ul v-if="link">
-        <li><a href="#" @click.prevent="showItem('langages')">Langages & Frameworks</a></li>
-        <li><a href="#" @click.prevent="showItem('outils')">Outils</a></li>
-        <li><a href="#" @click.prevent="showItem('contributions')">Contributions</a></li>
+      <div class="separator__title">
+        <font-awesome-icon size="xs" :icon="sectionStatus ? 'chevron-down' : 'chevron-right'" @click="togglesection()" />
+        <h2>{{ title }}</h2>
+      </div>
+      <ul class="separator__menu-s" v-if="link">
+        <li>
+          <a href="#" @click.prevent="showItem('langages')">
+          <font-awesome-icon icon="code" />
+            Langages & Frameworks
+          </a>
+        </li>
+        <li><a href="#" @click.prevent="showItem('outils')"><font-awesome-icon icon="wrench" />Outils</a></li>
+        <li><a href="#" @click.prevent="showItem('contributions')"><font-awesome-icon icon="code-branch" />Contributions</a></li>
       </ul>
     </div>
 </template>
 
 <script>
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faChevronDown, faChevronRight, faCode, faWrench, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faChevronDown)
+library.add(faChevronRight)
+library.add(faCode)
+library.add(faWrench)
+library.add(faCodeBranch)
 export default {
   // name: 'Head',
   props: {
@@ -23,7 +41,8 @@ export default {
         langages: true,
         outils: false,
         contributions: false
-      }
+      },
+      sectionStatus: false
     }
   },
   methods: {
@@ -50,7 +69,14 @@ export default {
         }
         this.$emit('langages-clicked', this.selectedCompetenceType)
       }
+    },
+    togglesection () {
+      this.sectionStatus = !this.sectionStatus
+      this.$emit('section-clicked', this.sectionStatus)
     }
+  },
+  components: {
+    FontAwesomeIcon
   }
 }
 </script>

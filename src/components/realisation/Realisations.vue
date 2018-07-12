@@ -1,8 +1,8 @@
 <template>
   <div class="realisations" id="realisations">
-    <Separator title="Réalsations"></Separator>
+    <Separator title="Réalisations" @section-clicked="clickedSection"></Separator>
     <!-- grid section  -->
-    <div class="projects">
+    <div class="projects" v-if="sectionStatus">
       <div class="project" @click.prevent="clickproject($event)" v-for="realisation in realisations" :key="realisation.id">
         <img :src="realisation.image" alt="" class="project__image">
         <h2 class="project__title"> {{ realisation.title }} </h2>
@@ -85,7 +85,8 @@ export default {
           title: 'Lorem impsut',
           libelle: 'Excepturi quis repellendus'
         }
-      ]
+      ],
+      sectionStatus: false
     }
   },
   components: {
@@ -108,6 +109,9 @@ export default {
         left: 0,
         top: project.offsetTop
       })
+    },
+    clickedSection (value) {
+      this.sectionStatus = value
     }
   }
 }

@@ -4,6 +4,13 @@
   margin: 0.5rem 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  .separator__title {
+    display: flex;
+    align-items: center;
+    h2 {
+      margin-left: 0.4rem;
+    }
+  }
   ul {
     text-align: center;
     // justify-self: end;
@@ -12,14 +19,15 @@
     li {
       padding: 0.2rem .5rem;
       border-radius: 5%;
-      background-color: #208af7;
+      background-color: #000;
       opacity: 0.9;
+      transition: all 0.1s ease-in-out;
       a {
         color: #fff;
         font-weight: 900;
       }
       &:hover {
-        background: opacify($color: #025609, $amount: 0.1);
+        opacity: 1;
       }
     }
   }
@@ -30,7 +38,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: .05rem;
-    h2 {
+    .separator__title {
       justify-self: center;
     }
     ul {
