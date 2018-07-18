@@ -6,17 +6,32 @@
     <div class="presentation">
       <h1>Web, Desktop & Mobile developer</h1>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates praesentium aut doloribus fugit consectetur, doloremque ad earum quo in vel magnam quidem id tenetur repellat repudiandae. Illum, totam aliquid.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates praesentium aut doloribus fugit consectetur, totam aliquid.
       </p>
+      <ul>
+        <li><a href="#" title="github"><font-awesome-icon :icon="['fab', 'github']" /></a></li>
+        <li><a href="#" title="stackoverflow"><font-awesome-icon :icon="['fab', 'stack-overflow']" /></a></li>
+        <li><a href="#" title="linkedin"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a></li>
+        <li><a href="#" title="twitter"><font-awesome-icon :icon="['fab', 'twitter']" /></a></li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStackOverflow, faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faStackOverflow, faGithub, faLinkedinIn, faTwitter)
 export default {
   // name: 'hero',
   props: {
     msg: String
+  },
+  components: {
+    FontAwesomeIcon
   }
 }
 </script>
@@ -35,6 +50,17 @@ export default {
   h1 {
     text-align: center;
   }
+  ul {
+    li {
+      border: 1px solid #208AF7;
+      padding: .3rem;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+  }
 }
 .img-hero {
   place-self: center;
@@ -52,7 +78,7 @@ img {
   }
   .presentation {
     text-align: center;
-    padding: 0 15%;
+    padding: 1rem 15%;
   }
 }
 @media screen and (max-width: 540px) {
@@ -65,7 +91,7 @@ img {
   }
   .presentation {
     text-align: center;
-    padding: 0 5%;
+    padding: 1rem 5%;
   }
 }
 </style>
