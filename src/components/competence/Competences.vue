@@ -28,7 +28,7 @@
 
       <div class="box">
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/wordpress.png" alt="">
+          <img height="90px" width="100px" src="../../assets/competences/wordpres.png" alt="">
         <span>Wordpress</span>
         </div>
       </div>
