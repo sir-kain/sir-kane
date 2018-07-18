@@ -17,7 +17,7 @@
 
       <div class="box h-span">
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/php.png" alt="">
+          <img height="90px" width="100px" src="../../assets/competences/phplang.png" alt="">
         <span>Php</span>
         </div>
          <div class="competence">
@@ -28,7 +28,7 @@
 
       <div class="box">
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/wordpres.png" alt="">
+          <img height="90px" width="100px" src="../../assets/competences/wordpress.png" alt="">
         <span>Wordpress</span>
         </div>
       </div>
