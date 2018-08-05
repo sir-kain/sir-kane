@@ -41,15 +41,14 @@ export default {
 .hero {
   background-color: #fff;
   display: grid;
-  justify-content: center;
-  justify-items: center;
+  // justify-content: center;
+  // justify-items: center;
   grid-template-columns: 1fr 2fr;
-  padding: 3rem 1.5rem;
+  padding: .5rem 1.5rem;
 }
 .presentation {
-  h1 {
-    text-align: center;
-  }
+  place-self: center;
+  text-align: center;
   ul {
     li {
       border: 1px solid #208AF7;
@@ -77,7 +76,6 @@ img {
     height: 100px;
   }
   .presentation {
-    text-align: center;
     padding: 1rem 15%;
   }
 }
@@ -90,7 +88,6 @@ img {
     height: 100px;
   }
   .presentation {
-    text-align: center;
     padding: 1rem 5%;
   }
 }
