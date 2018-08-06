@@ -23,11 +23,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faChevronDown, faChevronRight, faCode, faWrench, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faChevronDown)
-library.add(faChevronRight)
-library.add(faCode)
-library.add(faWrench)
-library.add(faCodeBranch)
+library.add(faChevronDown, faChevronRight, faCode, faWrench, faCodeBranch)
+
 export default {
   // name: 'Head',
   props: {

@@ -17,7 +17,7 @@
 
       <div class="box h-span">
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/php.png" alt="">
+          <img height="90px" width="100px" src="../../assets/competences/phplang.png" alt="">
         <span>Php</span>
         </div>
          <div class="competence">
@@ -28,7 +28,7 @@
 
       <div class="box">
          <div class="competence">
-          <img height="90px" width="100px" src="../../assets/competences/wordpres.png" alt="">
+          <img height="90px" width="100px" src="../../assets/competences/wordpress.png" alt="">
         <span>Wordpress</span>
         </div>
       </div>
@@ -125,29 +125,21 @@
       <div class="box-contribution">
         <div class="contribution">
           <img width="25px" src="../../assets/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+          <a href="https://github.com/symfony/symfony/commits?author=sir-kain">symfony/symfony/commits?author=sir-kain</a>
         </div>
         <div class="contribution">
           <img width="25px" src="../../assets/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
-        </div>
-        <div class="contribution">
-          <img width="25px" src="../../assets/competences/vuejs.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+          <a href="https://github.com/sonata-project/SonataAdminBundle/commits?author=sir-kain">SonataAdminBundle/commits?author=sir-kain</a>
         </div>
       </div>
       <div class="box-contribution">
         <div class="contribution">
           <img width="25px" src="../../assets/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
-        </div>
-        <div class="contribution">
-          <img width="25px" src="../../assets/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+          <a href="https://github.com/symfony/symfony-docs/commits?author=sir-kain">symfony/symfony-docs/commits?author=sir-kain</a>
         </div>
         <div class="contribution">
           <img width="25px" src="../../assets/competences/vuejs.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+          <a href="https://github.com/vuejs-fr/vuejs.org/commits?author=sir-kain">vuejs-fr/vuejs.org/commits?author=sir-kain</a>
         </div>
       </div>
     </div>

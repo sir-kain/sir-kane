@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <div class="img-hero">
-      <img src="../../assets/kain.jpeg" alt="image sir_kane">
+      <img src="../../assets/sirkane.jpeg" alt="image sir_kane">
     </div>
     <div class="presentation">
       <h1>Web, Desktop & Mobile developer</h1>
@@ -9,10 +9,10 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates praesentium aut doloribus fugit consectetur, totam aliquid.
       </p>
       <ul>
-        <li><a href="#" title="github"><font-awesome-icon :icon="['fab', 'github']" /></a></li>
-        <li><a href="#" title="stackoverflow"><font-awesome-icon :icon="['fab', 'stack-overflow']" /></a></li>
-        <li><a href="#" title="linkedin"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a></li>
-        <li><a href="#" title="twitter"><font-awesome-icon :icon="['fab', 'twitter']" /></a></li>
+        <li><a href="#" title="Github"><font-awesome-icon :icon="['fab', 'github']" /></a></li>
+        <li><a href="#" title="Stackoverflow"><font-awesome-icon :icon="['fab', 'stack-overflow']" /></a></li>
+        <li><a href="#" title="Linkedin"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a></li>
+        <li><a href="#" title="Twitter"><font-awesome-icon :icon="['fab', 'twitter']" /></a></li>
       </ul>
     </div>
   </div>
@@ -41,15 +41,14 @@ export default {
 .hero {
   background-color: #fff;
   display: grid;
-  justify-content: center;
-  justify-items: center;
+  // justify-content: center;
+  // justify-items: center;
   grid-template-columns: 1fr 2fr;
-  padding: 3rem 1.5rem;
+  padding: .5rem 1.5rem;
 }
 .presentation {
-  h1 {
-    text-align: center;
-  }
+  place-self: center;
+  text-align: center;
   ul {
     li {
       border: 1px solid #208AF7;
@@ -77,7 +76,6 @@ img {
     height: 100px;
   }
   .presentation {
-    text-align: center;
     padding: 1rem 15%;
   }
 }
@@ -90,7 +88,6 @@ img {
     height: 100px;
   }
   .presentation {
-    text-align: center;
     padding: 1rem 5%;
   }
 }
