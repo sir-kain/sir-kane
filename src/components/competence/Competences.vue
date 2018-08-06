@@ -125,29 +125,21 @@
       <div class="box-contribution">
         <div class="contribution">
           <img width="25px" src="../../assets/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+          <a href="https://github.com/symfony/symfony/commits?author=sir-kain">symfony/symfony/commits?author=sir-kain</a>
         </div>
         <div class="contribution">
           <img width="25px" src="../../assets/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
-        </div>
-        <div class="contribution">
-          <img width="25px" src="../../assets/competences/vuejs.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+          <a href="https://github.com/sonata-project/SonataAdminBundle/commits?author=sir-kain">SonataAdminBundle/commits?author=sir-kain</a>
         </div>
       </div>
       <div class="box-contribution">
         <div class="contribution">
           <img width="25px" src="../../assets/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
-        </div>
-        <div class="contribution">
-          <img width="25px" src="../../assets/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+          <a href="https://github.com/symfony/symfony-docs/commits?author=sir-kain">symfony/symfony-docs/commits?author=sir-kain</a>
         </div>
         <div class="contribution">
           <img width="25px" src="../../assets/competences/vuejs.png" alt="">
-          <a href="https://github.com/symfony/symfony/pull/27836">https://github.com/symfony/symfony/pull/27836</a>
+          <a href="https://github.com/vuejs-fr/vuejs.org/commits?author=sir-kain">vuejs-fr/vuejs.org/commits?author=sir-kain</a>
         </div>
       </div>
     </div>
