@@ -23,6 +23,8 @@
 <script>
 
 import Separator from '../separator/Separator'
+// eslint-disable-next-line
+import ng5 from '../../assets/realisations/ng5.svg'
 export default {
   // name: 'Head',
   props: {
@@ -39,9 +41,9 @@ export default {
         },
         {
           id: 2,
-          image: 'http://via.placeholder.com/140x100',
-          title: 'Lorem impsut',
-          libelle: 'Excepturi quis repellendus'
+          image: ng5,
+          title: 'Discovering angular 5',
+          libelle: 'Une mini TodoApp pour gèrer ses tâches'
         },
         {
           id: 3,
