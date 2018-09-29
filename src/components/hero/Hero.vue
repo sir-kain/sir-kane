@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <div class="img-hero">
-      <img src="../../assets/sirkane.jpeg" alt="image sir_kane">
+      <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538255702/sir_kane.jpg" alt="image sir_kane">
     </div>
     <div class="presentation">
       <h1>Web, Desktop & Mobile developer</h1>
