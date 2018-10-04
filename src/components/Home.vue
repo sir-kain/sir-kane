@@ -1,16 +1,17 @@
 <template>
-  <div>
+  <div class="home">
     <Head></Head>
     <Hero></Hero>
     <Competences></Competences>
     <Realisations></Realisations>
-
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Head from './head/Head.vue'
 import Hero from './hero/Hero.vue'
+import Footer from './footer/Footer.vue'
 import Competences from './competence/Competences.vue'
 import Realisations from './realisation/Realisations.vue'
 export default {
@@ -24,10 +25,15 @@ export default {
     Head,
     Hero,
     Competences,
-    Realisations
+    Realisations,
+    Footer
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+  .home {
+    display: grid;
+  }
+</style>

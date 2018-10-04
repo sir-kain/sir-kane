@@ -18,18 +18,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17%, 1fr));
     grid-gap: 20px;
-    counter-reset: box;
     grid-auto-flow: row dense;
     .box {
-      counter-increment: box;
       border-radius: 3px;
       background: #fff;
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06); // justify-self: center;
       padding: .2rem 0;
       display: grid;
-      &::after {
-        content: counter(box);
-      }
+
       .competence {
         display: grid;
         justify-items: center;
