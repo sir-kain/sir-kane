@@ -9,10 +9,10 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates praesentium aut doloribus fugit consectetur, totam aliquid.
       </p>
       <ul>
-        <li><a href="#" title="Github"><font-awesome-icon :icon="['fab', 'github']" /></a></li>
-        <li><a href="#" title="Stackoverflow"><font-awesome-icon :icon="['fab', 'stack-overflow']" /></a></li>
-        <li><a href="#" title="Linkedin"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a></li>
-        <li><a href="#" title="Twitter"><font-awesome-icon :icon="['fab', 'twitter']" /></a></li>
+        <li><a href="https://github.com/sir-kain" target="__blank" title="Github"><font-awesome-icon :icon="['fab', 'github']" /></a></li>
+        <li><a href="https://stackoverflow.com/users/8319507/sir-kane" target="__blank" title="Stackoverflow"><font-awesome-icon :icon="['fab', 'stack-overflow']" /></a></li>
+        <li><a href="https://www.linkedin.com/in/ndiaye-ahmadou-waly-a61056ba/" target="__blank" title="Linkedin"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a></li>
+        <li><a href="https://twitter.com/_sir_kane" target="__blank" title="Twitter @_sir_kane"><font-awesome-icon :icon="['fab', 'twitter']" /></a></li>
       </ul>
     </div>
   </div>

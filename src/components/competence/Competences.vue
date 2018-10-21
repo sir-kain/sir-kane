@@ -124,22 +124,22 @@
     <div class="line-v2" v-if="contributions  && sectionStatus">
       <div class="box-contribution">
         <div class="contribution">
-          <img width="25px" src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony/commits?author=sir-kain">symfony/symfony/commits?author=sir-kain</a>
+          <img width="25px" src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/symfony.png" alt="Symfony icon">
+          <a target="__blank" href="https://github.com/symfony/symfony/commits?author=sir-kain">symfony/symfony/commits?author=sir-kain</a>
         </div>
         <div class="contribution">
-          <img width="25px" src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/symfony.png" alt="">
-          <a href="https://github.com/sonata-project/SonataAdminBundle/commits?author=sir-kain">SonataAdminBundle/commits?author=sir-kain</a>
+          <img width="25px" src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1540145019/sonataicon.png" alt="Sonata icon">
+          <a target="__blank" href="https://github.com/sonata-project/SonataAdminBundle/commits?author=sir-kain">SonataAdminBundle/commits?author=sir-kain</a>
         </div>
       </div>
       <div class="box-contribution">
         <div class="contribution">
-          <img width="25px" src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/symfony.png" alt="">
-          <a href="https://github.com/symfony/symfony-docs/commits?author=sir-kain">symfony/symfony-docs/commits?author=sir-kain</a>
+          <img width="25px" src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/symfony.png" alt="symfony icon">
+          <a target="__blank" href="https://github.com/symfony/symfony-docs/commits?author=sir-kain">symfony/symfony-docs/commits?author=sir-kain</a>
         </div>
         <div class="contribution">
-          <img width="25px" src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/vuejs.png" alt="">
-          <a href="https://github.com/vuejs-fr/vuejs.org/commits?author=sir-kain">vuejs-fr/vuejs.org/commits?author=sir-kain</a>
+          <img width="25px" src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/vuejs.png" alt="vuejs icon">
+          <a target="__blank" href="https://github.com/vuejs-fr/vuejs.org/commits?author=sir-kain">vuejs-fr/vuejs.org/commits?author=sir-kain</a>
         </div>
       </div>
     </div>
