@@ -1,0 +1,20 @@
+{
+    "name": "sir-kane",
+    "short_name": "sir-kane",
+    "icons": [
+        {
+            "src": "https://res.cloudinary.com/dpdwdstqt/image/upload/v1538255702/sir_kane.jpg",
+            "sizes": "192x192",
+            "type": "image/jpg"
+        },
+        {
+            "src": "https://res.cloudinary.com/dpdwdstqt/image/upload/v1538255702/sir_kane.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#4DBA87"
+}

@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
       <div class="footer-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In cum labore accusamus laborum modi libero odio, ipsa ducimus ipsum hic porro aut dolore eveniet? Excepturi esse recusandae provident sequi atque.
+        © sir_kane
       </div>
   </div>
 </template>
@@ -29,16 +29,12 @@ export default {
 .footer {
   background-color: #fff;
   display: grid;
-  align-self: end;
-  align-items: end;
-  align-content: end;
-  // justify-content: center;
-  // justify-items: center;
-  // grid-template-columns: 1fr 2fr;
-  padding: 2rem 1.5rem;
-//   .footer-content {
-//       align-self: end;
-//   }
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  .footer-content {
+    grid-column-start: 9;
+    grid-row-start: 2;
+  }
 }
 @media screen and (max-width: 840px) {
 
