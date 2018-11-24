@@ -4,7 +4,7 @@
     <Hero></Hero>
     <Competences></Competences>
     <Realisations></Realisations>
-    <Footer></Footer>
+    <!-- <Footer></Footer> -->
   </div>
 </template>
 
@@ -34,6 +34,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   .home {
+    box-sizing: border-box;
+    // min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 auto;
     display: grid;
   }
 </style>
