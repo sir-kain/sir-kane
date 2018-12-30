@@ -1,7 +1,7 @@
 <template>
   <div class="head">
     <div class="menu">
-      <a href="#" class="logo"> <span>SK</span> sir_kane </a>
+      <a href="#" class="logo"> <span>SK</span> _sir_kane </a>
       <ul>
         <li class="mr"><a href="#competences">Compétences</a></li>
         <li class="mr"><a href="#realisations">Réalisations</a></li>
@@ -36,6 +36,7 @@ export default {
     .logo {
       justify-self: start;
       color: #2c3e50;
+      font-family: 'Pacifico', cursive;
       span {
         padding: .35rem;
         border: 2px solid #208AF7;
