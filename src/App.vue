@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
 </template>
@@ -16,6 +15,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(238, 238, 238);
+}
+img {
+  filter: grayscale(100%);
+}
+img:hover {
+  filter: grayscale(0)
 }
 ul {
   list-style: none;
@@ -48,7 +53,6 @@ h2 {
   /* border: 1px solid rebeccapurple; */
   box-sizing: border-box;
 }
-
 @media screen and (max-width: 840px) {
  #app {
    margin: 0;
