@@ -11,7 +11,7 @@
             Langages & Frameworks
           </a>
         </li>
-        <li><a href="#" @click.prevent.stop="showItem('outils')"><font-awesome-icon icon="wrench" />Outils</a></li>
+        <li><a href="#" @click.prevent.stop="showItem('outils')"><font-awesome-icon icon="wrench" />Tools</a></li>
         <li><a href="#" @click.prevent.stop="showItem('contributions')"><font-awesome-icon icon="code-branch" />Contributions</a></li>
       </ul>
     </div>

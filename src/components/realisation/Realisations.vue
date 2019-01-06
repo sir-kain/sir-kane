@@ -1,6 +1,6 @@
 <template>
   <div class="realisations" id="realisations">
-    <Separator title="Réalisations" @section-clicked="clickedSection"></Separator>
+    <Separator title="Projects" @section-clicked="clickedSection"></Separator>
     <!-- grid section  -->
     <div class="projects" v-if="sectionStatus">
       <div class="project" @click.prevent="clickproject($event)" v-for="realisation in realisations" :key="realisation.id">
