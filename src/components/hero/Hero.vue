@@ -9,21 +9,24 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates praesentium aut doloribus fugit consectetur, totam aliquid.
       </p>
       <ul>
+        <li @click="liRef()">
+          <img :src="gmailIcon" alt="Email" width="40" height="32">
+        </li>
         <!-- <li><a href="https://github.com/sir-kain" target="__blank" title="Github"><font-awesome-icon :icon="['fab', 'github']" /></a></li> -->
-        <li>
-          <img :src="githubIcon" alt="Github" width="32" height="32">
+        <li @click="liRef('https://github.com/sir-kain')">
+          <img :src="githubIcon" alt="Github" width="40" height="32">
         </li>
         <!-- <li><a href="https://stackoverflow.com/users/8319507/sir-kane" target="__blank" title="Stackoverflow"><font-awesome-icon :icon="['fab', 'stack-overflow']" /></a></li> -->
-        <li>
-          <img :src="stackOverflowIcon" alt="StackOverflow" width="32" height="32">
-        </li>
         <!-- <li><a href="https://www.linkedin.com/in/ndiaye-ahmadou-waly-a61056ba/" target="__blank" title="Linkedin"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a></li> -->
-        <li>
-          <img :src="linkedInIcon" alt="LinkedIn" width="32" height="32">
+        <li @click="liRef()">
+          <img :src="linkedInIcon" alt="LinkedIn" width="40" height="32">
         </li>
         <!-- <li><a href="https://twitter.com/_sir_kane" target="__blank" title="Twitter @_sir_kane"><font-awesome-icon :icon="['fab', 'twitter']" /></a></li> -->
-        <li>
-          <img :src="twitterIcon" alt="Twitter" width="32" height="32">
+        <li @click="liRef()">
+          <img :src="stackOverflowIcon" alt="StackOverflow" width="40" height="32">
+        </li>
+        <li @click="liRef()">
+          <img :src="twitterIcon" alt="Twitter" width="40" height="32">
         </li>
       </ul>
     </div>
@@ -35,8 +38,10 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStackOverflow, faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// import { VueRouter } from 'vue-router'
 
 library.add(faStackOverflow, faGithub, faLinkedinIn, faTwitter)
+// const router = new VueRouter()
 export default {
   // name: 'hero',
   props: {
@@ -47,7 +52,14 @@ export default {
       twitterIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/twitter.svg',
       stackOverflowIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/so.svg',
       githubIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/github.png',
-      linkedInIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/linkedin.svg'
+      linkedInIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/linkedin.svg',
+      gmailIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/gmail.svg'
+    }
+  },
+  methods: {
+    liRef () {
+      // window.location = 'google.com'
+      // router.push('google.com')
     }
   },
   components: {
@@ -72,7 +84,7 @@ export default {
   ul {
     li {
       // border: 1px solid #208AF7;
-      margin: 0.3rem;
+      margin: .3rem .5rem;
       // padding: .1rem;
       cursor: pointer;
       a {

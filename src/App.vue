@@ -15,9 +15,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(238, 238, 238);
+  color: #000;
 }
 img {
-  filter: grayscale(100%);
+  filter: grayscale(95%);
 }
 img:hover {
   filter: grayscale(0)
@@ -37,6 +38,7 @@ h1, h2 {
   padding: 0;
   margin: 0;
   font-size: 1.4em;
+  color: #000;
 }
 h2 {
   font-size: 1.2em;
