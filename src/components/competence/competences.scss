@@ -29,6 +29,9 @@
       .competence {
         display: grid;
         justify-items: center;
+        img {
+          width: 50%;
+        }
       }
     }
     .v-span {
