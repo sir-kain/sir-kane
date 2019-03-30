@@ -1,10 +1,10 @@
 <template>
   <div class="head">
     <div class="menu">
-      <a href="#" class="logo"> <span>SK</span> sir_kane </a>
+      <a href="#" class="logo"> <span>SK</span> _sir_kane </a>
       <ul>
-        <li class="mr"><a href="#competences">Compétences</a></li>
-        <li class="mr"><a href="#realisations">Réalisations</a></li>
+        <li class="mr"><a href="#competences">Skills</a></li>
+        <li class="mr"><a href="#realisations">Projects</a></li>
         <li class="mr"><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -35,7 +35,8 @@ export default {
     align-content: space-between;
     .logo {
       justify-self: start;
-      color: #2c3e50;
+      color: #000;
+      font-family: 'Pacifico', cursive;
       span {
         padding: .35rem;
         border: 2px solid #208AF7;
