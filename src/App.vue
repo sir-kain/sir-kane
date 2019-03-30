@@ -16,6 +16,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(238, 238, 238);
+  color: #000;
+}
+img {
+  filter: grayscale(95%);
+  /* max-width: 80%; */
+  /* max-height: 80%; */
+}
+img:hover {
+  filter: grayscale(0)
 }
 ul {
   list-style: none;
@@ -52,6 +61,9 @@ h2 {
 @media screen and (max-width: 840px) {
  #app {
    margin: 0;
+ }
+ img {
+  filter: grayscale(0%);
  }
 }
 
