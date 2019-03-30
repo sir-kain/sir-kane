@@ -59,6 +59,9 @@ h2 {
  #app {
    margin: 0;
  }
+ img {
+  filter: grayscale(0%);
+ }
 }
 
 @media screen and (min-width: 840px) and (max-width: 1040px) {

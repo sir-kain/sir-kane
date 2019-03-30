@@ -2,8 +2,9 @@
   background: #fff;
   padding: 0.35rem 1rem;
   margin: 0.5rem 0;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   .separator__title {
     cursor: pointer;
     display: flex;
@@ -13,13 +14,16 @@
     }
   }
   ul {
+    display: flex;
     text-align: center;
-    // justify-self: end;
-    place-self: center end;
-    font-size: .72rem;
+    font-size: .6rem;
     li {
-      padding: 0.2rem .5rem;
-      border-radius: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 .3rem;
+      margin-left: 5px;
+      border-radius: 5px;
       background-color: #000;
       opacity: 0.9;
       transition: all 0.1s ease-in-out;
@@ -36,14 +40,11 @@
 
 @media screen and (max-width: 540px) {
   .separator {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: .05rem;
-    .separator__title {
-      justify-self: center;
-    }
+    justify-content: center;
     ul {
-      justify-self: center;
+      li {
+        padding: .4rem;
+      }
     }
   }
 }

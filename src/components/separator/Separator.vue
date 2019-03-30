@@ -7,12 +7,22 @@
       <ul class="separator__menu-s" v-if="link">
         <li>
           <a href="#" @click.prevent.stop="showItem('langages')">
-          <font-awesome-icon icon="code" />
-            Langages & Frameworks
+            <font-awesome-icon icon="code" />
+            <span>Langages & Frameworks</span>
           </a>
         </li>
-        <li><a href="#" @click.prevent.stop="showItem('outils')"><font-awesome-icon icon="wrench" />Tools</a></li>
-        <li><a href="#" @click.prevent.stop="showItem('contributions')"><font-awesome-icon icon="code-branch" />Contributions</a></li>
+        <li>
+          <a href="#" @click.prevent.stop="showItem('outils')">
+            <font-awesome-icon icon="wrench" />
+            <span>Tools</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" @click.prevent.stop="showItem('contributions')">
+            <font-awesome-icon icon="code-branch" />
+            <span>Contributions</span>
+          </a>
+        </li>
       </ul>
     </div>
 </template>
