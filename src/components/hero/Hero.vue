@@ -9,24 +9,32 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates praesentium aut doloribus fugit consectetur, totam aliquid.
       </p>
       <ul>
-        <li @click="liRef()">
-          <img :src="gmailIcon" alt="Email" width="40" height="32">
-        </li>
+        <!-- <li @click="liRef()">
+          <img :src="gmailIcon" alt="ahmadouwalyndiaye@gmail.com">
+        </li> -->
         <!-- <li><a href="https://github.com/sir-kain" target="__blank" title="Github"><font-awesome-icon :icon="['fab', 'github']" /></a></li> -->
         <li @click="liRef('https://github.com/sir-kain')">
-          <img :src="githubIcon" alt="Github" width="40" height="32">
+          <!-- <img :src="githubIcon" alt="sir-kain" title="Githug"> -->
+          <font-awesome-icon :icon="['fab', 'github']" size="lg"/>
         </li>
         <!-- <li><a href="https://stackoverflow.com/users/8319507/sir-kane" target="__blank" title="Stackoverflow"><font-awesome-icon :icon="['fab', 'stack-overflow']" /></a></li> -->
         <!-- <li><a href="https://www.linkedin.com/in/ndiaye-ahmadou-waly-a61056ba/" target="__blank" title="Linkedin"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a></li> -->
-        <li @click="liRef()">
-          <img :src="linkedInIcon" alt="LinkedIn" width="40" height="32">
+        <li @click="liRef('https://www.linkedin.com/in/ndiaye-ahmadou-waly-a61056ba/')">
+          <!-- <img :src="linkedInIcon" alt="LinkedIn" title="LinkedIn"> -->
+          <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg"/>
         </li>
         <!-- <li><a href="https://twitter.com/_sir_kane" target="__blank" title="Twitter @_sir_kane"><font-awesome-icon :icon="['fab', 'twitter']" /></a></li> -->
-        <li @click="liRef()">
-          <img :src="stackOverflowIcon" alt="StackOverflow" width="40" height="32">
+        <li @click="liRef('https://stackoverflow.com/users/8319507/sir-kane')">
+          <!-- <img :src="stackOverflowIcon" alt="StackOverflow" title="StackOverflow"> -->
+          <font-awesome-icon :icon="['fab', 'stack-overflow']" size="lg"/>
         </li>
-        <li @click="liRef()">
-          <img :src="twitterIcon" alt="Twitter" width="40" height="32">
+        <li @click="liRef('https://twitter.com/_sir_kane')">
+          <!-- <img :src="twitterIcon" alt="Twitter" title="Twitter"> -->
+          <font-awesome-icon :icon="['fab', 'twitter']" size="lg"/>
+        </li>
+        <li @click="liRef('https://dev.to/sir_kane')">
+          <!-- <img :src="devToIcon" alt="DEV.TO" title="DEV.TO"> -->
+          <font-awesome-icon :icon="['fab', 'dev']" size="lg"/>
         </li>
       </ul>
     </div>
@@ -36,11 +44,11 @@
 <script>
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStackOverflow, faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faStackOverflow, faGithub, faLinkedinIn, faTwitter, faDev } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // import { VueRouter } from 'vue-router'
 
-library.add(faStackOverflow, faGithub, faLinkedinIn, faTwitter)
+library.add(faStackOverflow, faGithub, faLinkedinIn, faTwitter, faDev)
 // const router = new VueRouter()
 export default {
   // name: 'hero',
@@ -53,13 +61,13 @@ export default {
       stackOverflowIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/so.svg',
       githubIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/github.png',
       linkedInIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/linkedin.svg',
-      gmailIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/gmail.svg'
+      gmailIcon: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1545589417/portfolio/icons/gmail.svg',
+      devToIcon: 'https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg'
     }
   },
   methods: {
-    liRef () {
-      // window.location = 'google.com'
-      // router.push('google.com')
+    liRef (e) {
+      window.open(e, '_blank')
     }
   },
   components: {
@@ -79,9 +87,11 @@ export default {
   padding: .5rem 1.5rem;
 }
 .presentation {
-  place-self: center;
   text-align: center;
   ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     li {
       // border: 1px solid #208AF7;
       margin: .3rem .5rem;
@@ -90,6 +100,13 @@ export default {
       a {
         text-decoration: none;
         color: #000000;
+      }
+      img {
+        width: 35px;
+        max-width: 80%;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
       }
     }
   }
