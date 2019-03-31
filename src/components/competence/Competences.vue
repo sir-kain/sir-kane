@@ -67,13 +67,13 @@
       </div>
 
       <div class="box h-span">
-      <div class="competence">
+        <div class="competence">
           <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/python.png" alt="">
-        <span>Python</span>
+          <span>Python</span>
         </div>
          <div class="competence">
           <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/django.png" alt="">
-        <span>Django</span>
+          <span>Django</span>
         </div>
       </div>
     </div>
