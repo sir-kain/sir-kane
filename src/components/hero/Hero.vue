@@ -4,7 +4,10 @@
       <img style="filter: grayscale(0)" src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538255702/sir_kane.jpg" alt="image sir_kane">
     </div>
     <div class="presentation">
-      <h1>Web developer</h1>
+      <div class="title">
+        <h1>Frontend developer</h1>
+        <img src="https://www.countryflags.io/sn/flat/24.png">
+      </div>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates praesentium aut doloribus fugit consectetur, totam aliquid.
       </p>
@@ -88,6 +91,16 @@ export default {
 }
 .presentation {
   text-align: center;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      // display: inline-block;
+      margin-left: 5px;
+      filter: grayscale(0%);
+    }
+  }
   ul {
     display: flex;
     justify-content: center;
@@ -100,13 +113,6 @@ export default {
       a {
         text-decoration: none;
         color: #000000;
-      }
-      img {
-        width: 35px;
-        max-width: 80%;
-        display: inline-block;
-        vertical-align: middle;
-        text-align: center;
       }
     }
   }
