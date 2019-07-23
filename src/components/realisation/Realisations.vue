@@ -8,7 +8,7 @@
         <h2 class="project__title"> {{ realisation.title }} </h2>
         <p class="project__libelle"> {{ realisation.libelle }} </p>
         <div class="project__body">
-          <h2 class="project__body-title">Lorem impsut</h2>
+          <h2 class="project__body-title"> {{ realisation.body_title }} </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente nam modi recusandae corporis eligendi repellendus provident. Eius ducimus sapiente nisi, nesciunt aspernatur est natus veritatis quos odio numquam animi.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit quas voluptatem odio sed dolorem deleniti nisi vero dicta quod at nam ratione, obcaecati aperiam nemo architecto harum iusto! Doloremque.
@@ -37,13 +37,16 @@ export default {
           id: 1,
           image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1525458858/portfolio/projects/logo.png',
           title: 'PGDE',
+          body_title: 'PGDE',
           libelle: 'Plateforme de Gestion des Demandes d\'Emploi',
-          link: 'https://emploi-fpublique.sec.gouv.sn/'
+          link: 'https://emploi-fpublique.sec.gouv.sn/',
+          description: 'v'
         },
         {
           id: 2,
           image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538259110/portfolio/projects/ng5.png',
           title: 'Discovering angular 5',
+          body_title: 'Discovering angular 5',
           libelle: 'Une mini TodoApp pour gèrer ses tâches',
           link: 'https://ng5experience.herokuapp.com/'
         },
@@ -51,6 +54,7 @@ export default {
           id: 3,
           image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538259814/portfolio/projects/cg.png',
           title: 'Cellule Genre',
+          body_title: 'Cellule Genre',
           libelle: 'Cellule Genre du Ministère de la Santé et de l\'Action Sociale du Sénégal',
           link: 'https://cellulegenre-sante.herokuapp.com/'
         },
@@ -58,6 +62,7 @@ export default {
           id: 4,
           image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538260086/portfolio/projects/lsr.png',
           title: 'Les Specialistes en Réseaux (LSR)',
+          body_title: 'Les Specialistes en Réseaux (LSR)',
           libelle: 'Les Specialistes en Réseaux (LSR)',
           link: 'http://lsreseaux.com/'
         },
@@ -65,35 +70,8 @@ export default {
           id: 5,
           image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538313076/portfolio/projects/cmsfp.png',
           title: 'CMSFP',
+          body_title: 'CMSFP',
           libelle: 'Centre Médico-Social de la Fonction Publique SN',
-          link: ''
-        },
-        {
-          id: 6,
-          image: 'http://via.placeholder.com/140x100',
-          title: 'Lorem impsut',
-          libelle: 'Excepturi quis repellendus',
-          link: ''
-        },
-        {
-          id: 7,
-          image: 'http://via.placeholder.com/140x100',
-          title: 'Lorem impsut',
-          libelle: 'Excepturi quis repellendus',
-          link: ''
-        },
-        {
-          id: 8,
-          image: 'http://via.placeholder.com/140x100',
-          title: 'Lorem impsut',
-          libelle: 'Excepturi quis repellendus',
-          link: ''
-        },
-        {
-          id: 9,
-          image: 'http://via.placeholder.com/140x100',
-          title: 'Lorem impsut',
-          libelle: 'Excepturi quis repellendus',
           link: ''
         }
       ],

@@ -78,14 +78,11 @@
       </div> -->
     </div>
     <div class="line" v-if="outils  && sectionStatus">
-      <div class="box h-span">
+
+      <div class="box">
          <div class="competence">
-          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/tools/linux.png" alt="">
-        <span>Linux</span>
-        </div>
-         <div class="competence">
-          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/tools/intellij.png" alt="">
-        <span>Intellij</span>
+          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/tools/git.png" alt="">
+        <span>Git</span>
         </div>
       </div>
 
@@ -100,10 +97,14 @@
         </div>
       </div>
 
-      <div class="box">
+      <div class="box h-span">
          <div class="competence">
-          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/tools/git.png" alt="">
-        <span>Git</span>
+          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/tools/linux.png" alt="">
+        <span>Linux</span>
+        </div>
+         <div class="competence">
+          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/tools/intellij.png" alt="">
+        <span>Intellij</span>
         </div>
       </div>
 
@@ -111,13 +112,6 @@
          <div class="competence">
           <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/tools/docker.png" alt="">
         <span>Docker (virtualisation)</span>
-        </div>
-      </div>
-
-      <div class="box">
-         <div class="competence">
-          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/django.png" alt="">
-        <span>Django</span>
         </div>
       </div>
     </div>
