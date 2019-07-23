@@ -40,12 +40,12 @@
         </div>
       </div>
 
-      <div class="box">
+      <!-- <div class="box">
          <div class="competence">
           <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/java.png" alt="">
         <span>Java</span>
         </div>
-      </div>
+      </div> -->
 
       <div class="box h-span v-span">
          <div class="competence">
@@ -61,12 +61,12 @@
           <span>Angular</span>
         </div>
         <div class="competence">
-          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/angular.png" alt="">
-          <span>React</span>
+          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1563917471/portfolio/competences/nodejs.svg" alt="">
+          <span>Nodejs</span>
         </div>
       </div>
 
-      <div class="box h-span">
+      <!-- <div class="box h-span">
         <div class="competence">
           <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/python.png" alt="">
           <span>Python</span>
@@ -75,7 +75,7 @@
           <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/django.png" alt="">
           <span>Django</span>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="line" v-if="outils  && sectionStatus">
       <div class="box h-span">
