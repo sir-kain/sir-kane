@@ -5,7 +5,7 @@
     </div>
     <div class="presentation">
       <div class="title">
-        <h1>Frontend developer</h1>
+        <h1>Web developer</h1>
         <img src="https://www.countryflags.io/sn/flat/24.png">
       </div>
       <p>
