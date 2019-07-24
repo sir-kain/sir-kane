@@ -10,10 +10,9 @@
         <div class="project__body">
           <h2 class="project__body-title"> {{ realisation.body_title }} </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente nam modi recusandae corporis eligendi repellendus provident. Eius ducimus sapiente nisi, nesciunt aspernatur est natus veritatis quos odio numquam animi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit quas voluptatem odio sed dolorem deleniti nisi vero dicta quod at nam ratione, obcaecati aperiam nemo architecto harum iusto! Doloremque.
+            {{ realisation.description }}
           </p>
-          <a :href="realisation.link" target="_blank">En savoir plus</a>
+          <a :href="realisation.link" target="_blank">Link</a>
         </div>
       </div>
     </div>
@@ -39,16 +38,16 @@ export default {
           title: 'PGDE',
           body_title: 'PGDE',
           libelle: 'Plateforme de Gestion des Demandes d\'Emploi',
-          link: 'https://emploi-fpublique.sec.gouv.sn/',
-          description: 'v'
+          description: '',
+          link: 'https://emploi-fpublique.sec.gouv.sn/'
         },
         {
           id: 2,
-          image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538259110/portfolio/projects/ng5.png',
-          title: 'Discovering angular 5',
-          body_title: 'Discovering angular 5',
-          libelle: 'Une mini TodoApp pour gèrer ses tâches',
-          link: 'https://ng5experience.herokuapp.com/'
+          image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538313076/portfolio/projects/cmsfp.png',
+          title: 'CMSFP',
+          body_title: 'CMSFP',
+          libelle: 'Centre Médico-Social de la Fonction Publique SN',
+          link: ''
         },
         {
           id: 3,
@@ -60,19 +59,21 @@ export default {
         },
         {
           id: 4,
-          image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538260086/portfolio/projects/lsr.png',
-          title: 'Les Specialistes en Réseaux (LSR)',
-          body_title: 'Les Specialistes en Réseaux (LSR)',
-          libelle: 'Les Specialistes en Réseaux (LSR)',
-          link: 'http://lsreseaux.com/'
+          image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538259110/portfolio/projects/ng5.png',
+          title: 'Discovering angular 5',
+          body_title: 'Discovering angular 5',
+          libelle: 'Little todoList app to learn angular 5.',
+          description: 'Little todoList app to learn angular 5.',
+          link: 'https://ng5experience.herokuapp.com/'
         },
         {
           id: 5,
-          image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538313076/portfolio/projects/cmsfp.png',
-          title: 'CMSFP',
-          body_title: 'CMSFP',
-          libelle: 'Centre Médico-Social de la Fonction Publique SN',
-          link: ''
+          image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1538260086/portfolio/projects/lsr.png',
+          title: 'Les Specialistes en Réseaux (LSR)',
+          body_title: 'LSR website',
+          libelle: 'Les Specialistes en Réseaux (LSR)',
+          description: 'WordPress website during my internship at LSR. I no longer manage his administration.',
+          link: 'http://lsreseaux.com/'
         }
       ],
       sectionStatus: false

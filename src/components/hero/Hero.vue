@@ -9,7 +9,10 @@
         <img src="https://www.countryflags.io/sn/flat/24.png">
       </div>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia voluptates praesentium aut doloribus fugit consectetur, totam aliquid.
+        Hello, I'm Ahmadou Waly Ndiaye. I'm a web developer working for <a href="https://sn.coinafrique.com" target="__blank">CoinAfrique</a> and I love the Web!
+      </p>
+      <p>
+        You can also find me here:
       </p>
       <ul>
         <!-- <li @click="liRef()">
