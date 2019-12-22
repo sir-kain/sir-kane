@@ -110,8 +110,8 @@
 
       <div class="box">
          <div class="competence">
-          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1538256294/portfolio/competences/tools/docker.png" alt="">
-        <span>Docker (virtualisation)</span>
+          <img src="https://res.cloudinary.com/dpdwdstqt/image/upload/v1577050169/portfolio/competences/tools/firebase.svg" alt="">
+        <span> Firebase </span>
         </div>
       </div>
     </div>
