@@ -4,7 +4,7 @@
     <!-- grid section  -->
     <div class="projects" v-if="sectionStatus">
       <div class="project" @click.prevent="clickproject($event)" v-for="realisation in realisations" :key="realisation.id">
-        <img :src="realisation.image" alt="" class="project__image">
+        <img :src="realisation.image" alt="logo" class="project__image">
         <h2 class="project__title"> {{ realisation.title }} </h2>
         <p class="project__libelle"> {{ realisation.libelle }} </p>
         <div class="project__body">
@@ -32,6 +32,24 @@ export default {
   data () {
     return {
       realisations: [
+        {
+          id: 4545,
+          image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1580824158/portfolio/projects/vscmp.png',
+          title: 'MediaPlayer for VsCoode',
+          body_title: 'MediaPlayer for VsCode',
+          libelle: 'Extension VsCode permettant de streamer du sons (Youtube, Podcast)',
+          description: '',
+          link: 'https://marketplace.visualstudio.com/items?itemName=sirkane.vscode-mediaplayer'
+        },
+        {
+          id: 0,
+          image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1580823466/portfolio/projects/coinafrique.png',
+          title: 'CoinAfrique',
+          body_title: 'CoinAfrique',
+          libelle: 'Site de mise en relation entre clients et vendeurs',
+          description: '',
+          link: 'https://web.coinafrique.com/'
+        },
         {
           id: 1,
           image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1525458858/portfolio/projects/logo.png',
