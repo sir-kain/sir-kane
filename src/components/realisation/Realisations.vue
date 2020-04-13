@@ -35,7 +35,7 @@ export default {
         {
           id: 4545,
           image: 'https://res.cloudinary.com/dpdwdstqt/image/upload/v1580824158/portfolio/projects/vscmp.png',
-          title: 'MediaPlayer for VsCoode',
+          title: 'MediaPlayer for VsCode',
           body_title: 'MediaPlayer for VsCode',
           libelle: 'Extension VsCode permettant de streamer du sons (Youtube, Podcast)',
           description: '',
